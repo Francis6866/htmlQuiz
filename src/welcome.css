@@ -1,0 +1,90 @@
+.container{
+    background: #7CB855;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 2rem;
+    /* align-items: center; */
+}
+/* #3C6E57 */
+
+.welcome{
+    align-items: center;
+}
+
+.wave{
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    perspective: 20px;
+}
+
+.btn {
+    padding: 5px 25px;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn--dir {
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: blue;
+}
+
+.btn:hover{
+    background: #BBE06C;
+    color: #fff;
+}
+
+@keyframes wave {
+    from {
+        transform: rotateY(-40deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.question {
+    text-align: center;
+}
+
+
+/* Form */
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: auto;
+    flex-grow: 1;
+}
+
+.scrolls {
+    display: flex;
+    justify-content: space-between;
+}
+.homes {
+    display: flex;
+    justify-content: center;
+}
+
+.correction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
